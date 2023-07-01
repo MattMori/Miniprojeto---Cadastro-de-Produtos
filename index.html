@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/assets/style.css">
+    <title>Gerenciador de Produtos</title>
+</head>
+
+<body>
+    <header>
+       <img src="/assets//img/Logotipo.svg" >
+       <h1>Controle de Produtos</h1>
+    </header>
+    <main>
+        <h1>produtos</h1>
+        <span>Lista de Produtos</span>
+        <div id="card">
+            <div class="inputPd">
+                <label>Nome do Produto</label>
+                <input placeholder="Nome do Produto" type="text" id="pdNome">
+            </div>
+            <div class="inputPd">
+                <label>preço</label>
+                <input placeholder="R$ 00,00" type="text" id="pdPreco">
+            </div>
+            <button onclick="produto.Adicionar()">Adicionar</button>
+            <button onclick="produto.Cancelar()">Cancelar</button>
+        </div>
+        <div class="conteudo">
+            <table border="1">
+                <thead>
+                    <th>ID</th>
+                    <th>Produto</th>
+                    <th>Preco</th>
+                    <th>Remover</th>
+                </thead>
+                <tbody id="tbody"> 
+                </tbody>
+            </table>
+        </div>
+    </main>
+
+
+</body>
+<script src="/assets/script.js"></script>
+
+</html>
